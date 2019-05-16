@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:x_rt="http://java.sun.com/jstl/xml_rt"
+      xmlns:mj="http://mojarra.dev.java.net/mojarra_ext"
+      > 
+
+<h:head></h:head> 
+<h:body>
+	<h2>Car Details</h2>
+	<h:dataTable value="#{userData.uyeler}" var="uye" border="2">
+		<h:column>
+			<f:facet name="header">Uye id</f:facet>
+       <h:outputText value="#{uye.id}" />
+      </h:column>
+		<h:column>
+			<f:facet name="header">Uye ad</f:facet>
+       <h:outputText value="#{uye.ad}" />
+      </h:column>
+		<h:column>
+			<f:facet name="header">Uye soyad</f:facet>
+       <h:outputText value="#{uye.soyad}" />
+       </h:column>
+		<h:column>
+			<f:facet name="header">Uye mail</f:facet>
+       <h:outputText value="#{uye.email}" />
+       </h:column>
+		<h:column>
+			<f:facet name="header">uye passWord</f:facet>
+       <h:outputText value="#{uye.password}" />
+       </h:column>
+	</h:dataTable>
+</h:body>
+</html>
