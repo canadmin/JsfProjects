@@ -5,20 +5,23 @@
       xmlns:h="http://java.sun.com/jsf/html"> 
 
 <h:head></h:head> 
-<h:body> 
-		 <h:form>
-		 	First name:<h:inputText id="firstName" value="#{studentThree.firstName}"/>
+<h:body>
+ <h:form>
+		 	First name:<h:inputText id="firstName" value="#{studentFour.firstName}"/>
 		 	<br/> <br/>
-		 	Last name :<h:inputText value="#{studentThree.lastName}" id="lastName" />
+		 	Last name :<h:inputText value="#{studentFour.lastName}" id="lastName" />
 		 	<br/> <br/>
 		 
-		 	<h:selectOneRadio value="#{studentThree.favoriteLanguage}">
+		 	<h:selectManyCheckbox value="#{studentFour.favoriteLanguages}">
 		 		<f:selectItem itemValue="JAVA" itemLabel="Java"/>
-		 	</h:selectOneRadio>
+		 		<f:selectItem itemValue="C++" itemLabel="C++"/>
+				<f:selectItem itemValue="C" itemLabel="C"/>
+		 		
+		 	</h:selectManyCheckbox>
 		 	<br/> <br/>
 		 	
 
-		 	<h:commandButton  value="Submit" action="student_response_form" />
+		 	<h:commandButton  value="Submit" action="students_response_from_checkbox" />
 		 	
 		 </h:form>
 	
