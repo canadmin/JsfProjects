@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+<h:head><title> Student Registration form</title></h:head> 
+	<h:body> 
+		 <h:form>
+		 	First name:<h:inputText id="firstName" value="#{student.firstName}"/>
+		 	<br/> <br/>
+		 	Last name :<h:inputText value="#{student.lastName}" id="lastNAme" />
+		 	<br/> <br/>
+		 	
+		 	<h:commandButton  value="Submit" action="student_response" />
+		 
+		 </h:form>
+	
+	</h:body> 
+</html>
