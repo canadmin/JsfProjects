@@ -7,13 +7,18 @@
 <h:head><title> Student Registration form</title></h:head> 
 	<h:body> 
 		 <h:form>
-		 	First name:<h:inputText id="firstName" value="#{student.firstName}"/>
+		 	First name:<h:inputText id="firstName" value="#{studentTwo.firstName}"/>
 		 	<br/> <br/>
-		 	Last name :<h:inputText value="#{student.lastName}" id="lastNAme" />
+		 	Last name :<h:inputText value="#{studentTwo.lastName}" id="lastNAme" />
 		 	<br/> <br/>
+		 	<h:selectOneMenu value="#{studentTwo.country}">
+		 	<f:selectItem itemValue="Brazil" itemLabel="Brazil"/>
+		 	<f:selectItem itemValue="Turkey" itemLabel="Turkey"/>
+		 	
+		 	</h:selectOneMenu>
 		 	
 		 	<h:commandButton  value="Submit" action="student_response" />
-		 
+		 	
 		 </h:form>
 	
 	</h:body> 
