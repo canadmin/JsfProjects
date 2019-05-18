@@ -11,11 +11,15 @@
 		 	<br/> <br/>
 		 	Last name :<h:inputText value="#{studentTwo.lastName}" id="lastNAme" />
 		 	<br/> <br/>
-		 	<h:selectOneMenu value="#{studentTwo.country}">
-		 	<f:selectItem itemValue="Brazil" itemLabel="Brazil"/>
-		 	<f:selectItem itemValue="Turkey" itemLabel="Turkey"/>
 		 	
+		 	
+		 	<h:selectOneMenu value="#{studentTwo.country}">
+		 	<f:selectItems value="#{studentTwo.countryOptions}"/>
 		 	</h:selectOneMenu>
+		 	
+<!-- 		 	<f:selectItem itemValue="Brazil" itemLabel="Brazil"/> -->
+<!-- 		 	<f:selectItem itemValue="Turkey" itemLabel="Turkey"/> -->
+		 	
 		 	
 		 	<h:commandButton  value="Submit" action="student_response" />
 		 	
