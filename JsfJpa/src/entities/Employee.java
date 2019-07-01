@@ -15,6 +15,8 @@ public class Employee implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+	
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
@@ -73,6 +75,20 @@ public class Employee implements Serializable {
 			return false;
 		return true;
 	}
+	
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	
+	
 	
 	
 	
